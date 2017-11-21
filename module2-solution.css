@@ -1,22 +1,27 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    padding: 5px;
 }
 #page-heading{
     color: red;
     display: block;
     text-align: center;
-    font-size: 25px;
+    font-size: 2em;
     font-family: arial;
     margin-bottom: 25px;
     font-weight: bold;
+    margin-top: 100px;
 }
-.section{
-    border: 2px solid #000000;
-    width: 25%;;
+/* 1 cột trong hàng là 1 ô  */
+.col_in_row{
     display: block;
     float: left;
-    margin-left: 10px;
+    width: 33.33%;
+    padding:10px;
 }
 
 .title-section{
@@ -24,10 +29,60 @@
     float: right;
     width: 150px;
     padding : 5px;
-    background: #3883de;
+    text-align: center;
+}
+#tt1{
+    background: #eb4593
+}
+#tt2{
+    background: #f33a59;
     color: #ffffff;
 }
-.content-section{
-    margin-top: 20px;
+#tt3{
+    background: #eaec5d
+}
+/* đoạn văn bình thường */
+#p1{
+    clear: right;
     padding: 10px;
 }
+.row{
+    width: 100%;
+}
+.child-col{
+    border: 2px solid #000000;
+    width: 100%;
+    background: #b4b0b0;
+}
+/* for Desktop */
+@media (min-width: 992px){
+    .col-lg-992{
+        width: 33.33%;
+
+    }
+}
+/* end media for desktop */
+
+/* for Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+       /* .col-md-768{
+           width: 250px;
+
+       } */
+       .child-1{
+           width: 50%;
+       }
+       .child-2{
+           width: 100%;
+       }
+}
+/* end media for Tablet */
+
+/* for Mobile */
+@media (max-width: 767px){
+    .col-sm-767{
+        width: 100%;
+
+    }
+}
+/* end media for Mobile */
