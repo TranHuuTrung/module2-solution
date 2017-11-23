@@ -16,7 +16,7 @@ body{
     font-weight: bold;
     margin-top: 100px;
 }
-/* 1 cột trong hàng là 1 ô  */
+/* 1 cols in one rows  */
 .col_in_row{
     display: block;
     float: left;
@@ -41,7 +41,7 @@ body{
 #tt3{
     background: #eaec5d
 }
-/* đoạn văn bình thường */
+/* normal paragraph  */
 #p1{
     clear: right;
     padding: 10px;
