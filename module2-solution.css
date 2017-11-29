@@ -54,14 +54,14 @@ body{
     width: 100%;
     background: #b4b0b0;
 }
-/* for Desktop */
-@media (min-width: 992px){
-    .col-lg-992{
-        width: 33.33%;
+/* for Mobile */
+@media (max-width: 767px){
+    .col-sm-767{
+        width: 100%;
 
     }
 }
-/* end media for desktop */
+/* end media for Mobile */
 
 /* for Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -78,11 +78,13 @@ body{
 }
 /* end media for Tablet */
 
-/* for Mobile */
-@media (max-width: 767px){
-    .col-sm-767{
-        width: 100%;
+/* for Desktop */
+@media (min-width: 992px){
+    .col-lg-992{
+        width: 33.33%;
 
     }
 }
-/* end media for Mobile */
+/* end media for desktop */
+
+
